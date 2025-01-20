@@ -9,11 +9,11 @@
 
 ## 🍅 Pomodoro 1
 
-🚧 Create new board
+✅ Create new board
 | |
 -+-+-
 | |
 -+-+-
 | |
-❒ Display new board
+🚧 Display new board
 ❒ Display player: 'X' and 'O'

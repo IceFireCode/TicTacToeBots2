@@ -13,6 +13,17 @@ describe('TicTacoToeBots ', () => {
         ];
         expect(newBoard.state).toStrictEqual(state);
       });
+      it('And we can display the inital state to the user, in a fancy way', () => {
+        const newBoard = new Board();
+        const displayedBoard = [' | | ', '------', ' | | ', '------', ' | | '];
+        expect(newBoard.display()).toStrictEqual(displayedBoard);
+      });
+    });
+
+    describe('', () => {
+      it('', () => {
+        expect().toBe();
+      });
     });
   });
 });
