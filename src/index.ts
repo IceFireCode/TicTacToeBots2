@@ -14,3 +14,11 @@ export class Board {
     return [' | | ', '------', ' | | ', '------', ' | | '];
   }
 }
+
+export class Player {
+  constructor(private displayName: string) {}
+
+  display(): string {
+    return this.displayName;
+  }
+}

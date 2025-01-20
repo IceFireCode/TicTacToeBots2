@@ -1,5 +1,5 @@
 // tests/index.test.ts
-import { Board } from '../src/';
+import { Board, Player } from '../src/';
 
 describe('TicTacToToeBots ', () => {
   describe('Starting a new Game', () => {
