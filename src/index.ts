@@ -1,4 +1,12 @@
 // src/index.ts
+export class Game {
+  constructor() {}
+
+  displayStartPlayer(): string {
+    return 'The game will start with player X';
+  }
+}
+
 export class Board {
   state: string | null[][];
 
