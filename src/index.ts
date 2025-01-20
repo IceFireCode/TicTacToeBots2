@@ -5,6 +5,10 @@ export class Game {
   displayStartPlayer(): string {
     return 'The game will start with player X';
   }
+
+  displayBoardIsBeingCreated(): string {
+    return 'Game Board Creation...';
+  }
 }
 
 export class Board {

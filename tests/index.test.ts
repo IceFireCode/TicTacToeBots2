@@ -8,7 +8,7 @@ describe('TicTacToToeBots ', () => {
       expect(new Game().displayStartPlayer()).toBe(startingPlayerText);
     });
     it('We can display that the board is being created', () => {
-      const boardBeingCreatedText = 'Game Board Creation…';
+      const boardBeingCreatedText = 'Game Board Creation...';
       expect(new Game().displayBoardIsBeingCreated()).toBe(
         boardBeingCreatedText
       );
