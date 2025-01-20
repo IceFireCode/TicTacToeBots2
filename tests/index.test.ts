@@ -7,6 +7,12 @@ describe('TicTacToToeBots ', () => {
       const startingPlayerText = 'The game will start with player X';
       expect(new Game().displayStartPlayer()).toBe(startingPlayerText);
     });
+    it('We can display that the board is being created', () => {
+      const boardBeingCreatedText = 'Game Board Creation…';
+      expect(new Game().displayBoardIsBeingCreated()).toBe(
+        boardBeingCreatedText
+      );
+    });
     describe('We can create a new Board', () => {
       it('And its state will be nine empty fields (null)', () => {
         const newBoard = new Board();
