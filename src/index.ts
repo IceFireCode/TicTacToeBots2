@@ -9,4 +9,8 @@ export class Board {
       [null, null, null],
     ];
   }
+
+  display(): string[] {
+    return [' | | ', '------', ' | | ', '------', ' | | '];
+  }
 }
