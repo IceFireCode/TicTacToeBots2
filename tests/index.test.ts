@@ -20,8 +20,13 @@ describe('TicTacToToeBots ', () => {
       });
     });
     describe('We can create the first player (X)', () => {
-      it('Displaying the first player will show the X ', () => {
+      it('Displaying the first player will show the X', () => {
         expect(new Player('X').display()).toBe('X');
+      });
+    });
+    describe('We can create the second player (Y)', () => {
+      it('Displaying the first player will show the Y', () => {
+        expect(new Player('Y').display()).toBe('Y');
       });
     });
   });
