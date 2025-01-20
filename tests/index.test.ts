@@ -19,11 +19,10 @@ describe('TicTacoToeBots ', () => {
         expect(newBoard.display()).toStrictEqual(displayedBoard);
       });
     });
-
-    // describe('', () => {
-    //   it('', () => {
-    //     expect().toBe();
-    //   });
-    // });
+    describe('', () => {
+      it('', () => {
+        expect().toBe();
+      });
+    });
   });
 });
