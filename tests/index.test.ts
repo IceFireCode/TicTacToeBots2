@@ -13,6 +13,10 @@ describe('TicTacToToeBots ', () => {
         boardBeingCreatedText
       );
     });
+    it('We can display that the board is created', () => {
+      const boardIsCreatedText = 'Board Created.';
+      expect(new Game().displayBoardIsCreated()).toBe(boardIsCreatedText);
+    });
     describe('We can create a new Board', () => {
       it('And its state will be nine empty fields (null)', () => {
         const newBoard = new Board();

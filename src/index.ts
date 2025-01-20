@@ -9,6 +9,10 @@ export class Game {
   displayBoardIsBeingCreated(): string {
     return 'Game Board Creation...';
   }
+
+  displayBoardIsCreated(): string {
+    return 'Board Created.';
+  }
 }
 
 export class Board {
