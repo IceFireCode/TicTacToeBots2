@@ -1,6 +1,12 @@
 // src/index.ts
-export function helloWorld(): string {
-  return "Hello, world!";
-};
+export class Board {
+  state: string | null[][];
 
-console.log(helloWorld());
+  constructor() {
+    this.state = [
+      [null, null, null],
+      [null, null, null],
+      [null, null, null],
+    ];
+  }
+}

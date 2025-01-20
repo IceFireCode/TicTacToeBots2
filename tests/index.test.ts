@@ -1,9 +1,9 @@
 // tests/index.test.ts
-import { helloWorld } from '../src/';
+import { Board } from '../src/';
 
 describe('TicTacoToeBots ', () => {
   describe('Starting a new Game', () => {
-    it('We can create a new Board', () => {
+    describe('We can create a new Board', () => {
       it('And its state will be nine empty fields (null)', () => {
         const newBoard = new Board();
         const state = [
