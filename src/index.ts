@@ -22,3 +22,5 @@ export class Player {
     return this.displayName;
   }
 }
+
+console.log(new Board().display());

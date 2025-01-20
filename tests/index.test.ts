@@ -3,6 +3,10 @@ import { Board, Player } from '../src/';
 
 describe('TicTacToToeBots ', () => {
   describe('Starting a new Game', () => {
+    it('We can display that the first player (X) will make the first move', () => {
+      const startingPlayerText = 'The game will start with player X';
+      expect(new Game().displayStartPlayer()).toBe(startingPlayerText);
+    });
     describe('We can create a new Board', () => {
       it('And its state will be nine empty fields (null)', () => {
         const newBoard = new Board();

@@ -20,9 +20,9 @@
 
 ## 🍅 Pomodoro 2
 
-🚧 Display player: 'X' and 'O'
-❒ try console, displaying game state
-❒ Display player X starts
+✅ Display player: 'X' and 'O'
+✅ try console, displaying game state
+🚧 Display player X starts
 ❒ Display board is created
 ❒ Display board is created
 
