@@ -1,7 +1,7 @@
 // tests/index.test.ts
 import { Board } from '../src/';
 
-describe('TicTacoToeBots ', () => {
+describe('TicTacToToeBots ', () => {
   describe('Starting a new Game', () => {
     describe('We can create a new Board', () => {
       it('And its state will be nine empty fields (null)', () => {
@@ -19,9 +19,9 @@ describe('TicTacoToeBots ', () => {
         expect(newBoard.display()).toStrictEqual(displayedBoard);
       });
     });
-    describe('', () => {
-      it('', () => {
-        expect().toBe();
+    describe('We can create the first player (X)', () => {
+      it('Displaying the first player will show the X ', () => {
+        expect(new Player('X').display()).toBe('X');
       });
     });
   });
