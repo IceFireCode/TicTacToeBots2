@@ -1,10 +1,18 @@
 // tests/index.test.ts
-import { helloWorld } from "../src/";
+import { helloWorld } from '../src/';
 
-describe('helloWorld function', () => {
-  describe('in scenario A', () => {
-    it('should return a hello message', () => {
-      expect(helloWorld()).toBe('Hello, world!');
+describe('TicTacoToeBots ', () => {
+  describe('Starting a new Game', () => {
+    it('We can create a new Board', () => {
+      it('And its state will be nine empty fields (null)', () => {
+        const newBoard = new Board();
+        const state = [
+          [null, null, null],
+          [null, null, null],
+          [null, null, null],
+        ];
+        expect(newBoard.state).toStrictEqual(state);
+      });
     });
-  })
+  });
 });
