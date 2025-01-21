@@ -26,8 +26,8 @@ export class Board {
     ];
   }
 
-  display(): string[] {
-    return [' | | ', '------', ' | | ', '------', ' | | '];
+  display(): string {
+    return ' | | \n------\n | | \n------\n | | ';
   }
 }
 
