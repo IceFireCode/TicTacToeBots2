@@ -2,6 +2,14 @@
 export class Game {
   constructor() {}
 
+  startNewGame() {
+    console.log(this.displayBoardIsBeingCreated());
+    const board = new Board();
+    console.log(board.display());
+    console.log(this.displayBoardIsCreated());
+    console.log(this.displayStartPlayer());
+  }
+
   displayStartPlayer(): string {
     return 'The game will start with player X';
   }
@@ -39,4 +47,4 @@ export class Player {
   }
 }
 
-console.log(new Board().display());
+console.log(new Game().startNewGame());
