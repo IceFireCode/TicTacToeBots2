@@ -53,7 +53,8 @@ describe('TicTacToToeBots ', () => {
         [null, playerOne, null],
         [null, null, null],
       ];
-      expect(board.makeMove(playerOne, [1, 1]).state).toBe();
+      board.makeMove(playerOne, [1, 1]);
+      expect(board.state).toBe();
     });
   });
 });

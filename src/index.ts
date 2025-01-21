@@ -34,6 +34,8 @@ export class Board {
     ];
   }
 
+  makeMove(playerOne: Player, field: [number, number]) {}
+
   display(): string {
     return ' | | \n------\n | | \n------\n | | ';
   }
