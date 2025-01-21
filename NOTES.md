@@ -28,7 +28,7 @@
 
 ## 🍅 Pomodoro 3
 
-❒ refactor displaying board state as one string (with new lines)
+🚧 refactor displaying board state as one string (with new lines)
 ❒ milestone 1000, game creation... game.start()
 ❒ Play one move, in center field (X)
 | |
