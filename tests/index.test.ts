@@ -44,4 +44,16 @@ describe('TicTacToToeBots ', () => {
       });
     });
   });
+  describe('When the game has started, the players can make moves', () => {
+    it('After the first move by player one in the center field [1, 1], the board is updated', () => {
+      const board = new Board();
+      const playerOne = new Player('X');
+      const state = [
+        [null, null, null],
+        [null, playerOne, null],
+        [null, null, null],
+      ];
+      expect(board.makeMove(playerOne, [1, 1]).state).toBe();
+    });
+  });
 });
