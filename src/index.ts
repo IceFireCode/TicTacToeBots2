@@ -24,7 +24,7 @@ export class Game {
 }
 
 export class Board {
-  state: Player[][] | null[][];
+  state: (Player | null)[][];
 
   constructor() {
     this.state = [
@@ -34,9 +34,10 @@ export class Board {
     ];
   }
 
-  makeMove(playerOne: Player, field: [number, number]) {
+  makeMove(player: Player, field: [number, number]) {
     const rowIndex = field[0];
     const columnIndex = field[1];
+    this.state[rowIndex][columnIndex] = player;
   }
 
   display(): string {
