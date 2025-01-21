@@ -29,7 +29,7 @@ describe('TicTacToToeBots ', () => {
       });
       it('And we can display the inital state to the user, in a fancy way', () => {
         const newBoard = new Board();
-        const displayedBoard = [' | | \n------\n | | \n------\n | | '];
+        const displayedBoard = ' | | \n------\n | | \n------\n | | ';
         expect(newBoard.display()).toStrictEqual(displayedBoard);
       });
     });
