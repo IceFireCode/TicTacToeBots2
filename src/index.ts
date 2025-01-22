@@ -7,21 +7,21 @@ export class Game {
     console.log(this.displayBoardIsBeingCreated());
     console.log(this.board.display());
     console.log(this.displayBoardIsCreated());
-    console.log(this.displayStartPlayer());
+    console.log(this.displayStartPlayer() + '\n\n');
 
     this.board.makeMove(playerOne, [0, 0]);
-    console.log(this.board.display());
+    console.log(this.board.display() + '\n\n');
 
     this.board.makeMove(playerTwo, [1, 1]);
-    console.log(this.board.display());
+    console.log(this.board.display() + '\n\n');
     this.board.makeMove(playerOne, [1, 0]);
-    console.log(this.board.display());
+    console.log(this.board.display() + '\n\n');
     this.board.makeMove(playerTwo, [2, 2]);
-    console.log(this.board.display());
+    console.log(this.board.display() + '\n\n');
     this.board.makeMove(playerOne, [2, 0]);
-    console.log(this.board.display());
+    console.log(this.board.display() + '\n\n');
 
-    console.log(`PLAYER ${this.board.getWinner()?.display()} WON!`);
+    console.log(`PLAYER ${this.board.getWinner()?.display()} WON!\n\n`);
   }
 
   displayStartPlayer(): string {
