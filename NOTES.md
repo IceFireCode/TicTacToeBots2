@@ -39,8 +39,9 @@
 
 ## 🍅 Pomodoro 4
 
-❒ after one move by X in center field, display board
+✅ after one move by X in center field, display board
 ' | | \n------\n |X| \n------\n | | '
+🚧 refactor: board needs to be class variable
 ❒ display X won after series of moves:
 X| |
 -+-+-

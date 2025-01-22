@@ -1,6 +1,6 @@
 // src/index.ts
 export class Game {
-  board: Board = new Board()
+  board: Board = new Board();
   constructor() {}
 
   startNewGame() {
@@ -8,6 +8,18 @@ export class Game {
     console.log(this.board.display());
     console.log(this.displayBoardIsCreated());
     console.log(this.displayStartPlayer());
+
+    this.board.makeMove(playerOne, [0, 0]);
+    console.log(this.board.display());
+
+    this.board.makeMove(playerTwo, [1, 1]);
+    console.log(this.board.display());
+    this.board.makeMove(playerOne, [1, 0]);
+    console.log(this.board.display());
+    this.board.makeMove(playerTwo, [2, 2]);
+    console.log(this.board.display());
+    this.board.makeMove(playerOne, [2, 0]);
+    console.log(this.board.display());
   }
 
   displayStartPlayer(): string {
@@ -70,6 +82,8 @@ export class Player {
   }
 }
 
+const playerOne = new Player('X');
+const playerTwo = new Player('Y');
+
 const gameWithXWinningHorizontally = new Game();
 gameWithXWinningHorizontally.startNewGame();
-gameWithXWinningHorizontally.
