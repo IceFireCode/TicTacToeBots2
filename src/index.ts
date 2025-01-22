@@ -53,4 +53,5 @@ export class Player {
   }
 }
 
-console.log(new Game().startNewGame());
+const gameWithXWinningHorizontally = new Game();
+gameWithXWinningHorizontally.startNewGame();

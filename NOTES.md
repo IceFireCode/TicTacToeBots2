@@ -36,7 +36,18 @@
 |X|
 -+-+-
 | |
-❒ after one move, current player changed (X -> Y)
+
+## 🍅 Pomodoro 4
+
+❒ after one move by X in center field, display board
+' | | \n------\n |X| \n------\n | | '
+❒ display X won after series of moves:
+X| |
+-+-+-
+X|O|
+-+-+-
+X| |O
 
 Future pomodoros:
 ❒ refactor board state fields to contain players (or null)
+❒ after one move, current player changed (X -> Y)
