@@ -53,3 +53,11 @@ X| |O
 Future pomodoros:
 ❒ refactor board state fields to contain players (or null)
 ❒ after one move, current player changed (X -> Y)
+
+REFLECTION:
+
+Compared to the first time doing this task, I defenitely changed the approach, both technically and by coding style. I used Typescript with the Cookiecutter this time instead of going through a lot of setup pain but using my preffered language Kotlin. The first time a first sketched my architecture on a piece of paper. This time I just started small and tried to make the architecture emerge. And I really sticked two four pomodori for the tests+coding, stopping at a point that does not feel great yet.
+
+I felt stressed by the task, setting the bar too high for myself after reading the task, and knowing I only have two hours. Also knew upfront that I had no idea how to run the game and keep all code covered with tests. Also didn't know upfront how to handle the randomization of the moves with TDD.
+
+Main thing to work on for me would be to keep my stress level lower. Set the bar lower and stop (over)thinking the task and thinking about how to build something I didn't even get to yet in the time I spend.
