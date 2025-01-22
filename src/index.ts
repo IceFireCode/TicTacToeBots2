@@ -41,7 +41,24 @@ export class Board {
   }
 
   display(): string {
-    return ' | | \n------\n | | \n------\n | | ';
+    let displayedBoard: string[] = [];
+    this.state.forEach((row, index) => {
+      if (index > 0) {
+        displayedBoard.push('\n------\n');
+      }
+      row.forEach((field, index) => {
+        if (field === null) {
+          displayedBoard.push(' ');
+        }
+        if (field != null) {
+          displayedBoard.push(field?.display());
+        }
+        if (index < row.length - 1) {
+          displayedBoard.push('|');
+        }
+      });
+    });
+    return displayedBoard.join('');
   }
 }
 
