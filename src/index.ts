@@ -1,11 +1,11 @@
 // src/index.ts
 export class Game {
+  board: Board = new Board()
   constructor() {}
 
   startNewGame() {
     console.log(this.displayBoardIsBeingCreated());
-    const board = new Board();
-    console.log(board.display());
+    console.log(this.board.display());
     console.log(this.displayBoardIsCreated());
     console.log(this.displayStartPlayer());
   }
@@ -70,5 +70,6 @@ export class Player {
   }
 }
 
-// const gameWithXWinningHorizontally = new Game();
-// gameWithXWinningHorizontally.startNewGame();
+const gameWithXWinningHorizontally = new Game();
+gameWithXWinningHorizontally.startNewGame();
+gameWithXWinningHorizontally.
