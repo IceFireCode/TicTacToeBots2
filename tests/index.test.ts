@@ -64,4 +64,17 @@ describe('TicTacToToeBots ', () => {
       expect(board.display()).toStrictEqual(displayedBoard);
     });
   });
+  describe('After each move, one of the players can be the winner with three Xs in a line', () => {
+    it('Player X wins with a vertical line in the first column, after three moves', () => {
+      const playerOne = new Player('X');
+      const playerTwo = new Player('Y');
+      const initialBoardState = [
+        [playerOne, null, null],
+        [playerOne, playerTwo, null],
+        [playerOne, null, playerTwo],
+      ];
+      const board = new Board(initialBoardState);
+      expect(board.getWinner()).toStrictEqual(playerOne);
+    });
+  });
 });

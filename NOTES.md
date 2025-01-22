@@ -41,8 +41,8 @@
 
 ✅ after one move by X in center field, display board
 ' | | \n------\n |X| \n------\n | | '
-🚧 refactor: board needs to be class variable
-❒ display X won after series of moves:
+✅ refactor: board needs to be class variable
+🚧 display X won after series of moves:
 X| |
 -+-+-
 X|O|

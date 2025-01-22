@@ -85,5 +85,5 @@ export class Player {
 const playerOne = new Player('X');
 const playerTwo = new Player('Y');
 
-const gameWithXWinningHorizontally = new Game();
-gameWithXWinningHorizontally.startNewGame();
+const gameWithXWinningVertically = new Game();
+gameWithXWinningVertically.startNewGame();
