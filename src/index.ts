@@ -1,6 +1,6 @@
 // src/index.ts
 export class Game {
-  board: Board = new Board();
+  board: Board = new Board(null);
   constructor() {}
 
   startNewGame() {
@@ -38,12 +38,20 @@ export class Game {
 export class Board {
   state: (Player | null)[][];
 
-  constructor() {
-    this.state = [
-      [null, null, null],
-      [null, null, null],
-      [null, null, null],
-    ];
+  constructor(initialBoardState: null | (Player | null)[][]) {
+    if (initialBoardState == null) {
+      this.state = [
+        [null, null, null],
+        [null, null, null],
+        [null, null, null],
+      ];
+    } else {
+      this.state = initialBoardState;
+    }
+  }
+
+  getWinner(): Player | null {
+    return this.state[0][0];
   }
 
   makeMove(player: Player, field: [number, number]) {

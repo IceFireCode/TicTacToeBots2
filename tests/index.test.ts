@@ -19,7 +19,7 @@ describe('TicTacToToeBots ', () => {
     });
     describe('We can create a new Board', () => {
       it('And its state will be nine empty fields (null)', () => {
-        const newBoard = new Board();
+        const newBoard = new Board(null);
         const state = [
           [null, null, null],
           [null, null, null],
@@ -28,7 +28,7 @@ describe('TicTacToToeBots ', () => {
         expect(newBoard.state).toStrictEqual(state);
       });
       it('And we can display the inital state to the user, in a fancy way', () => {
-        const newBoard = new Board();
+        const newBoard = new Board(null);
         const displayedBoard = ' | | \n------\n | | \n------\n | | ';
         expect(newBoard.display()).toStrictEqual(displayedBoard);
       });
@@ -46,7 +46,7 @@ describe('TicTacToToeBots ', () => {
   });
   describe('When the game has started, the players can make moves', () => {
     it('After the first move by player one in the center field [1, 1], the board is updated', () => {
-      const board = new Board();
+      const board = new Board(null);
       const playerOne = new Player('X');
       const state = [
         [null, null, null],
@@ -57,7 +57,7 @@ describe('TicTacToToeBots ', () => {
       expect(board.state).toStrictEqual(state);
     });
     it('After the first move by player one in the center field [1, 1], we can display the board', () => {
-      const board = new Board();
+      const board = new Board(null);
       const playerOne = new Player('X');
       const displayedBoard = ' | | \n------\n |X| \n------\n | | ';
       board.makeMove(playerOne, [1, 1]);
