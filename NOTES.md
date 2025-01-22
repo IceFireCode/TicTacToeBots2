@@ -42,12 +42,13 @@
 ✅ after one move by X in center field, display board
 ' | | \n------\n |X| \n------\n | | '
 ✅ refactor: board needs to be class variable
-🚧 display X won after series of moves:
+✅ display X won after series of moves:
 X| |
 -+-+-
 X|O|
 -+-+-
 X| |O
+✅ milestone 2000, game till X wins with vertical line
 
 Future pomodoros:
 ❒ refactor board state fields to contain players (or null)

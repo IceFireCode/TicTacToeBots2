@@ -20,6 +20,8 @@ export class Game {
     console.log(this.board.display());
     this.board.makeMove(playerOne, [2, 0]);
     console.log(this.board.display());
+
+    console.log(`PLAYER ${this.board.getWinner()?.display()} WON!`);
   }
 
   displayStartPlayer(): string {
