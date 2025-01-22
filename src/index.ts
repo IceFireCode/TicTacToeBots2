@@ -53,5 +53,5 @@ export class Player {
   }
 }
 
-const gameWithXWinningHorizontally = new Game();
-gameWithXWinningHorizontally.startNewGame();
+// const gameWithXWinningHorizontally = new Game();
+// gameWithXWinningHorizontally.startNewGame();

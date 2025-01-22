@@ -56,5 +56,12 @@ describe('TicTacToToeBots ', () => {
       board.makeMove(playerOne, [1, 1]);
       expect(board.state).toStrictEqual(state);
     });
+    it('After the first move by player one in the center field [1, 1], we can display the board', () => {
+      const board = new Board();
+      const playerOne = new Player('X');
+      const displayedBoard = ' | | \n------\n |X| \n------\n | | ';
+      board.makeMove(playerOne, [1, 1]);
+      expect(board.display()).toStrictEqual(displayedBoard);
+    });
   });
 });
